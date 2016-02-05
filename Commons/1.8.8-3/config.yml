@@ -1,0 +1,145 @@
+# Any concerns regarding the purpose of configuration nodes
+# What they affect, or how they change aspects of the API
+# are described under the Wiki on Commons GitHub page.
+
+Database:
+  Mysql:
+    enable: {{mysql_enabled}}
+    host: {{mysql_host}}
+    port: '{{mysql_port}}'
+    database-name: {{mysql_database}}
+    username: {{mysql_username}}
+  track-online-status: {{track_online_player_status}}
+  # Used in the chosen database implementation
+  # to identify the server.
+  server-name: {{server_name}}
+Commands:
+  # By default Commons includes a plethora of commands
+  # Designed to aid you in your server ventures!
+  # Though if you're not requiring use of these commands, and
+  # Wish to use Commons for only its API Features, then change this value to
+  # False
+  register-commands: {{register_commands}}
+  # Allows usage of 'Bukkit:' prefixed commands
+  # Changing this value to false disable these commands
+  # from being used on your server.
+  enable-bukkit-commands: {{enable_bukkit_commands}}
+  # Changing the value of this option to false
+  # Stops players from using '/plugins' on your server.
+  enable-plugins-command: {{enable_plugins_command}}
+Server:
+  # Whether or not to enable join messages
+  # in chat when a player joins the server
+  enable-join-message: {{enable_join_messages}}
+  # Whether or not to enable leave messages
+  # in chat when a player leaves the server
+  enable-leave-messages: {{enable_leave_messages}}
+  # Whether or not to show 'player was kicked'
+  # messages in chat, when a player is kicked.
+  enable-kick-messages: {{enable_kick_messages}}
+  # Determines whether or not Commons should
+  # handle chat formatting (in a very basic manner)
+  # or to hand it off to another plugin
+  external-chat-plugin: {{external_chat_plugin}}
+  # When enabled, only players with 'commons.silence.bypass'
+  # in their permissions will be able to talk
+  silence-chat: {{silence_chat}}
+  Premium:
+    # Determines whether or not to kick a non-premium player
+    # when a premium user joins the server, and the server
+    # is currently full.
+    # Premium users are determined by the 'premium-user-permission'
+    # node below.
+    kick-when-full: {{kick_when_full}}
+    # Message to display to non-premium users after being
+    # kicked to make room for a premium user.
+    kick-when-full-message: '{{kick_when_full_message}}'
+    # When enabled, only users with premium (defined by a permission below)
+    # will be able to join your server.
+    # Those without premium will be displayed a configurable message
+    premium-only-mode: {{premium_only_mode}}
+    # This message will be shown to non-premium users who join during premium-only mode.
+    premium-only-mode-kick-message: '{{premium_only_mode_kick_message}}'
+    # Used to restrict access during premium only mode
+    # To players who have this permission
+    premium-user-permission: {{premium_user_permission}}
+  Worlds:
+    # All the options beneath this are used to control
+    # various aspects of the worlds across all
+    # the enabled worlds on your server.
+    #
+    # If you have another plugin enabled that also
+    # Modifies any of these values, there's no guarantee
+    # that they will function as expected.
+    disable-weather: {{disable_weather}}
+    # When enabled, players will be teleported to their world spawn when joining the server
+    teleport-to-spawn-on-join: {{teleport_to_spawn_on_join}}
+    # Changes whether or not lightning will strike during a storm
+    disable-lightning: {{disable_lightning}}
+    # Changes whether or not thunder will rumble during a storm
+    disable-thunder: {{disable_thunder}}
+    # Changes whether or not ice will spread and accumulate
+    disable-ice-accumulation: {{disable_ice_accumulation}}
+    # Changes whether or not snow will accumulate while snowing
+    disable-snow-accumulation: {{disable_snow_accumulation}}
+    # Changes whether or not mycelium will infect blocks around it, and spread
+    disable-mycelium-spread: {{disable_mycelium_spread}}
+    # Changes whether or not fire will spread
+    disable-fire-spread: {{disable_fire_spread}}
+    # Changes whether or not leaves will decay over time
+    disable-leaf-decay: {{disable_leaf_decay}}
+    # When enabled it changes pressure plates into launch pads, like many server hubs have
+    launchpad-pressure-plates: {{launchpad_pressure_plates}}
+    # Changes whether or not blocks can be broken outside of creative
+    enable-block-break: {{enable_block_break}}
+    # Changes if players are able to pick up items that are dropped
+    enable-item-pickup: {{enable_item_pickup}}
+    # Changes if players are able to drop their items
+    enable-item-drop: {{enable_item_drop}}
+    # Changes whether or not players lose their hunger while playing
+    enable-food-change: {{enable_food_change}}
+    # When enabled, fireworks will launch and explode whenever a regular explosion happens
+    fireworks-on-explosion: {{fireworks_on_explosion}}
+    # Changes whether or not players take fall damage
+    enable-fall-damage: {{enable_fall_damage}}
+  Maintenance-Mode:
+    # Maintenance mode enables admins, operators, and users
+    # with the 'commons.maintenance.join' permission
+    # to join while the server is undergoing maintenance.
+    # At the same time, it keeps all players not permitted, out, until
+    # maintenance is complete!
+    #
+    # Customizable MOTD (Server list message)
+    # and kick message are available to notify users of
+    # maintenance!
+    enabled: {{maintenance_enabled}}
+    kick-message: '{{maintenance_kick_message}}'
+    motd: '{{maintenance_motd}}'
+Debug:
+  # Debug options are very useful to developers!
+  # Providing a StackTraceEvent, and various output options
+  # which enable in-game players in debug mode
+  # and developers hooking the event to
+  # track, handle, change, and work with the headaches of bug fixing
+  # in an easy and fun manner!
+  stack-trace-event: {{stack_trace_event}}
+  # When enabled in conjunction with stack-trace-event
+  # users in debug mode will receive a Book in-game outlining
+  # The error which happened, and it's stack trace written in the books
+  # pages!
+  stack-trace-book: {{stack_trace_book}}
+  # When enabled in conjunction with stack-trace-event,
+  # users in debug mode will receive the stack trace in their chat;
+  # so eyes don't have to stray from game, to console, to code.
+  #
+  # Note: Can quickly and painfully spam your chat if to many
+  # errors occur
+  stack-trace-chat: {{stack_trace_chat}}
+Warps:
+  # When enabled, it provides an interactive GUI
+  # of which players can use to teleport and interact
+  # with warps.
+  #
+  # If it's disabled, and a player does /warps, they'll receive
+  # a chat based menu with pages detailing the available warps.
+  enable-gui: {{warp_gui}}

@@ -1,0 +1,61 @@
+<Configuration>
+   <mysql-backend>{{mysql_enabled}}</mysql-backend>
+   <database-config>
+      <MySqlHost>{{mysql_host}}</MySqlHost>
+      <MySqlPort>{{mysql_port}}</MySqlPort>
+      <Database>{{mysql_database}}</Database>
+      <MySqlUsername>{{mysql_username}}</MySqlUsername>
+      <MySqlPassword>{{mysql_password}}</MySqlPassword>
+      <track-online-status>{{track_online_player_status}}</track-online-status>
+   </database-config>
+   <register-commands>{{register_commands}}</register-commands>
+   <command-config>
+      <disable-bukkit-commands>{% if enable_bukkit_commands %}false{% else %}true{% endif %}</disable-bukkit-commands>
+      <disable-plugins-command>{% if enable_plugins_command %}false{% else %}true{% endif %}</disable-plugins-command>
+   </command-config>
+   <premium-config>
+      <premium_enable>{{premium_only_mode}}</premium_enable>
+      <premium_kick_message>{{premium_only_mode_kick_message|e}}</premium_kick_message>
+      <premium_only_permission>{{premium_user_permission}}</premium_only_permission>
+      <kick_non_premium_player_when_full>{{kick_when_full}}</kick_non_premium_player_when_full>
+      <kick_non_premium_message>{{kick_when_full_message|e}}</kick_non_premium_message>
+   </premium-config>
+   <world-config>
+      <teleport-to-spawn-on-join>{{teleport_to_spawn_on_join}}</teleport-to-spawn-on-join>
+      <disable-weather>{{disable_weather}}</disable-weather>
+      <disable-lightning>{{disable_lightning}}</disable-lightning>
+      <disable-thunder>{{disable_thunder}}</disable-thunder>
+      <disable-ice-accumulation>{{disable_ice_accumulation}}</disable-ice-accumulation>
+      <disable-snow-accumulation>{{disable_snow_accumulation}}</disable-snow-accumulation>
+      <disable-mycelium-spread>{{disable_mycelium_spread}}</disable-mycelium-spread>
+      <disable-fire-spread>{{disable_fire_spread}}</disable-fire-spread>
+      <disable-leaf-decay>{{disable_leaf_decay}}</disable-leaf-decay>
+      <launchpad-pressure-plates>{{launchpad_pressure_plates}}</launchpad-pressure-plates>
+      <enable-join-messages>{{enable_join_messages}}</enable-join-messages>
+      <enable-leave-messages>{{enable_leave_messages}}</enable-leave-messages>
+      <enable-kick-messages>{{enable_kick_messages}}</enable-kick-messages>
+      <enable-block-break>{{enable_block_break}}</enable-block-break>
+      <enable-item-pickup>{{enable_item_pickup}}</enable-item-pickup>
+      <enable-item-drop>{{enable_item_pickup}}</enable-item-drop>
+      <enable-food-change>{{enable_food_change}}</enable-food-change>
+      <external-chat-plugin>{{external_chat_plugin}}</external-chat-plugin>
+      <explosion-fireworks>{{fireworks_on_explosion}}</explosion-fireworks>
+      <enable-fall-damage>{{enable_fall_damage}}</enable-fall-damage>
+      <silence-chat>{{silence_chat}}</silence-chat>
+   </world-config>
+   <maintenance-config>
+      <!-- TODO Add in the Maintenance-enabled node -->
+      <enabled>{{maintenance_enabled}}</enabled>
+      <maintenance-motd>{{maintenance_motd|e}}</maintenance-motd>
+      <maintenance-kick-message>{{maintenance_kick_message|e}}</maintenance-kick-message>
+   </maintenance-config>
+   <debug-config>
+      <stack-trace-event>{{stack_trace_event}}</stack-trace-event>
+      <stack-trace-book>{{stack_trace_book}}</stack-trace-book>
+      <stack-trace-chat>{{stack_trace_chat}}</stack-trace-chat>
+   </debug-config>
+   <warp-config>
+      <enable-warps-menu>{{warp_gui}}</enable-warps-menu>
+   </warp-config>
+   <server-name>{{server_name}}</server-name>
+</Configuration>
