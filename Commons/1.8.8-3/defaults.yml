@@ -1,0 +1,44 @@
+mysql_enabled: false
+mysql_host: localhost
+mysql_port: 3306
+mysql_database: database
+mysql_username: username
+mysql_password: password
+track_online_player_status: false
+server_name: EDIT THIS
+register_commands: true
+enable_bukkit_commands: true
+enable_plugins_command: true
+enable_join_message: true
+enable_leave_messages: true
+enable_kick_messages: true
+external_chat_plugin: true
+silence_chat: false
+kick_when_full: false
+kick_when_full_message: &eYou were kicked to make room for a Premium User. Sorry.
+premium_only_mode: false
+premium_only_mode_kick_message: &cThis server is currently in premium mode
+premium_user_permission: commons.premiumuser
+disable_weather: false
+teleport_to_spawn_on_join: false
+disable_lightning: false
+disable_thunder: false
+disable_ice_accumulation: false
+disable_snow_accumulation: false
+disable_mycelium_spread: false
+disable_fire_spread: false
+disable_leaf_decay: false
+launchpad_pressure_plates: false
+enable_block_break: true
+enable_item_pickup: true
+enable_item_drop: true
+enable_food_change: true
+fireworks_on_explosion: false
+enable_fall_damage: true
+maintenance_enabled: false
+maintenance_kick_message: &cThis server is currently undergoing maintenance; Sorry for the inconvenience
+maintenance_motd: &aThis server is currently undergoing maintenance
+stack_trace_event: true
+stack_trace_book: false
+stack_trace_chat: true
+warp_gui: true
