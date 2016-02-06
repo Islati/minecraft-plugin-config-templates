@@ -1,4 +1,4 @@
-from minecraftpluginresolver.scripts import *
+from mcresolver.scripts import *
 import os
 
 _plugin_versions_ = ['1.8.8-3']
