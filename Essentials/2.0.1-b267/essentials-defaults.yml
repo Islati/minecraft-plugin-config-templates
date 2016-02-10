@@ -1,0 +1,303 @@
+ops_name_color: '4'
+nickname_prefix: '~'
+max_nick_length: 15
+ignore_colors_in_max_nick_length: false
+change_displayname: true
+teleport_safety: true
+force_disable_teleport_safety: false
+teleport_cooldown: 0
+teleport_delay: 0
+teleport_invulnerability: 4
+heal_cooldown: 60
+near_radius: 200
+item_spawn_blacklist:
+permission_based_item_spawn: false
+spawnmob_limit: 10
+warn_on_smite: true
+drop_items_if_full: false
+notify_no_new_mail: true
+overridden_commands:
+disabled_commands:
+socialspy_commands:
+- msg
+- w
+- r
+- mail
+- m
+- t
+- whisper
+- emsg
+- tell
+- er
+- reply
+- ereply
+- email
+- action
+- describe
+- eme
+- eaction
+- edescribe
+- etell
+- ewhisper
+- pm
+mute_commands:
+- f
+- kittycannon
+player_commands:
+- afk
+- afk.auto
+- back
+- back.ondeath
+- balance
+- balance.others
+- balancetop
+- build
+- chat.color
+- chat.format
+- chat.shout
+- chat.question
+- clearinventory
+- compass
+- depth
+- delhome
+- getpos
+- geoip.show
+- help
+- helpop
+- home
+- home.others
+- ignore
+- info
+- itemdb
+- kit
+- kits.tools
+- list
+- mail
+- mail.send
+- me
+- motd
+- msg
+- msg.color
+- nick
+- near
+- pay
+- ping
+- protect
+- r
+- rules
+- realname
+- seen
+- sell
+- sethome
+- setxmpp
+- signs.create.protection
+- signs.create.trade
+- signs.break.protection
+- signs.break.trade
+- signs.use.balance
+- signs.use.buy
+- signs.use.disposal
+- signs.use.enchant
+- signs.use.free
+- signs.use.gamemode
+- signs.use.heal
+- signs.use.info
+- signs.use.kit
+- signs.use.mail
+- signs.use.protection
+- signs.use.repair
+- signs.use.sell
+- signs.use.time
+- signs.use.trade
+- signs.use.warp
+- signs.use.weather
+- spawn
+- suicide
+- time
+- tpa
+- tpaccept
+- tpahere
+- tpdeny
+- warp
+- warp.list
+- world
+- worth
+- xmpp
+skip_used_one_time_kits_from_kit_list: false
+tools_delay: 10
+tools_items:
+- 272 1
+- 273 1
+- 274 1
+- 275 1
+- 276 2
+- mcresolverdept=6
+dtools_delay: 600
+dtools_items:
+- 278 1 efficiency:1 durability:1 fortune:1 name:&4Gigadrill lore:The_drill_that_&npierces|the_heavens
+- 277 1 digspeed:3 name:Dwarf lore:Diggy|Diggy|Hole
+- 298 1 color:255,255,255 name:Top_Hat lore:Good_day,_Good_day
+- 279:780 1
+- mcresolverdept=6
+notch_delay: 6000
+notch_items:
+- 397:3 1 player:Notch
+- mcresolverdept=6
+color_delay: 6000
+color_items:
+- 387 1 title:&4Book_&9o_&6Colors author:KHobbits lore:Ingame_color_codes book:Colors
+- mcresolverdept=6
+firework_delay: 6000
+firework_items:
+- 401 1 name:Angry_Creeper color:red fade:green type:creeper power:1
+- 401 1 name:Starry_Night color:yellow,orange fade:blue type:star effect:trail,twinkle
+  power:1
+- 401 2 name:Solar_Wind color:yellow,orange fade:red shape:large effect:twinkle color:yellow,orange
+  fade:red shape:ball effect:trail color:red,purple fade:pink shape:star effect:trail
+  power:1
+- mcresolverdept=6
+haxor_delay: 10000
+haxor_items:
+- 57 64
+- 56 64
+- 7 64
+- mcresolverdept=6
+enabledsigns:
+sign_use_per_second: 4
+backup_interval: 30
+per_warp_permission: false
+list_admins: owner admin
+debug: false
+remove_god_on_disconnect: false
+auto_afk: 300
+auto_afk_kick: -1
+freeze_afk_players: false
+disable_item_pickup_while_afk: false
+cancel_afk_on_interact: true
+cancel_afk_on_move: true
+afk_list_name: 
+death_messages: true
+allow_silent_join_quit: false
+custom_join_message: 
+custom_quit_message: 
+no_god_in_worlds:
+world_teleport_permissions: false
+default_stack_size: -1
+oversized_stacksize: 64
+repair_enchanted: true
+unsafe_enchantments: false
+register_back_in_listener: false
+login_attack_delay: 5
+max_fly_speed: 0.8
+max_walk_speed: 0.8
+mails_per_minute: 1000
+max_tempban_time: -1
+last_message_reply_recipient: true
+last_message_reply_recipient_timeout: 180
+milk_bucket_easter_egg: true
+send_fly_enable_on_join: true
+world_time_permissions: false
+update_bed_at_daytime: true
+world_home_permissions: false
+sethome_multiple_default: 3
+sethome_multiple_vip: 5
+sethome_multiple_staff: 10
+tpa_accept_cancellation: 120
+starting_balance: 0
+command_costs:
+currency_symbol: $
+max_money: 10000000000000
+min_money: -10000
+economy_log_enabled: false
+use_bukkit_permissions: false
+minimum_pay_amount: 0.001
+non_ess_in_help: true
+hide_permissionless_help: true
+chat_radius: 0
+chat_format: <{DISPLAYNAME}> {MESSAGE}
+chat_group_formats:
+prevent_lava_flow: false
+prevent_water_flow: false
+prevent_water_bucket_flow: false
+prevent_fire_spread: true
+prevent_lava_fire_spread: true
+prevent_flint_fire: false
+prevent_lightning_fire_spread: true
+prevent_portal_creation: false
+prevent_tnt_explosion: false
+prevent_tnt_playerdamage: false
+prevent_tnt_minecart_explosion: false
+prevent_tnt_minecart_playerdamage: false
+prevent_fireball_explosion: false
+prevent_fireball_fire: false
+prevent_fireball_playerdamage: false
+prevent_witherskull_explosion: false
+prevent_witherskull_playerdamage: false
+prevent_wither_spawnexplosion: false
+prevent_wither_blockreplace: false
+prevent_creeper_explosion: false
+prevent_creeper_playerdamage: false
+prevent_creeper_blockdamage: false
+prevent_enderdragon_blockdamage: true
+prevent_enderman_pickup: false
+prevent_villager_death: false
+prevent_entitytarget: false
+spawn_creeper: false
+spawn_skeleton: false
+spawn_spider: false
+spawn_giant: false
+spawn_zombie: false
+spawn_slime: false
+spawn_ghast: false
+spawn_pig_zombie: false
+spawn_enderman: false
+spawn_cave_spider: false
+spawn_silverfish: false
+spawn_blaze: false
+spawn_magma_cube: false
+spawn_ender_dragon: false
+spawn_pig: false
+spawn_sheep: false
+spawn_cow: false
+spawn_chicken: false
+spawn_squid: false
+spawn_wolf: false
+spawn_mushroom_cow: false
+spawn_snowman: false
+spawn_ocelot: false
+spawn_iron_golem: false
+spawn_villager: false
+spawn_wither: false
+spawn_bat: false
+spawn_witch: false
+spawn_horse: false
+creeper_max_height: -1
+disable_fall: false
+disable_pvp: false
+disable_drown: false
+disable_suffocate: false
+disable_lavadmg: false
+disable_projectiles: false
+disable_contactdmg: false
+disable_firedmg: false
+disable_lightning: false
+disable_wither: false
+weather_storm: false
+weather_thunder: false
+weather_lightning: false
+disable_build: true
+disable_use: true
+disable_warn_on_build_disallow: true
+alert_on_placement: 10,11,46,327
+alert_on_use: 327
+alert_on_break:
+blacklist_placement: 10,11,46,327
+blacklist_usage: 327
+blacklist_break:
+blacklist_piston:
+blacklist_dispenser:
+newbies_announce_format: '&dWelcome {DISPLAYNAME}&d to the server!'
+newbies_spawnpoint: newbies
+newbies_kit: tools
+respawn_listener_priority: high
+respawn_at_home: false
