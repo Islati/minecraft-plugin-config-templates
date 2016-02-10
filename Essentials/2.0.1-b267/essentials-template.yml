@@ -132,7 +132,7 @@ disabled-commands: '{{disabled_commands}}'
 # remove commands that are used for something you dont want to spy on.
 # Set - '*' in order to listen on all possible commands.
 socialspy-commands:
-  {%+ for socialspy_commands_item in socialspy_commands %}
+  {% for socialspy_commands_item in socialspy_commands %}
     - {{socialspy_commands_item}}
   {% endfor %}
 
@@ -142,7 +142,7 @@ socialspy-commands:
 # Essentials already disabled Essentials messaging commands by default.
 # It only cares about the root command, not args after that (it sees /f chat the same as /f)
 mute-commands:
-  {%+ for mute_commands_item in mute_commands %}
+  {% for mute_commands_item in mute_commands %}
     - {{mute_commands_item}}
   {% endfor %}
 
@@ -152,7 +152,7 @@ mute-commands:
 # Whitelist the commands and permissions you wish to give players by default (everything else is op only).
 # These are the permissions without the "essentials." part.
 player-commands:
-  {%+ for player_commands_item in player_commands %}
+  {% for player_commands_item in player_commands %}
     - {{player_commands_item}}
   {% endfor %}
 
@@ -171,37 +171,37 @@ kits:
   tools:
     delay: {{tools_delay}}
     items:
-    {%+ for tools_items_item in tools_items %}
+    {% for tools_items_item in tools_items %}
       - {{tools_items_item}}
     {% endfor %}
   dtools:
     delay: {{dtools_delay}}
     items:
-    {%+ for dtools_items_item in dtools_items %}
+    {% for dtools_items_item in dtools_items %}
       - {{dtools_items_item}}
     {% endfor %}
   notch:
     delay: {{notch_delay}}
     items:
-    {%+ for notch_items_item in notch_items %}
+    {% for notch_items_item in notch_items %}
       - {{notch_items_item}}
     {% endfor %}
   color:
     delay: {{color_delay}}
     items:
-    {%+ for color_items_item in color_items %}
+    {% for color_items_item in color_items %}
       - {{color_items_item}}
     {% endfor %}
   firework:
     delay: {{firework_delay}}
     items:
-    {%+ for firework_items_item in firework_items %}
+    {% for firework_items_item in firework_items %}
       - {{firework_items_item}}
     {% endfor %}
   haxor:
     delay: {{haxor_delay}}
     items:
-    {%+ for haxor_items_item in haxor_items %}
+    {% for haxor_items_item in haxor_items %}
       - {{haxor_items_item}}
     {% endfor %}
 
