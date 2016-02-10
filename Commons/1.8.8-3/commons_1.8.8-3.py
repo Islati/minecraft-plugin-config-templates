@@ -9,7 +9,7 @@ __config_defaults__ = "https://raw.githubusercontent.com/TechnicalBro/minecraft-
 
 
 def configure(parent_folder, config_options={}, **kwargs):
-    commons_folder = os.path.join(parent_folder, 'Commons')
+    commons_folder = os.path.join(parent_folder, kwargs.get("plugin_folder", 'Commons'))
 
     if not os.path.exists(commons_folder):
         os.makedirs(commons_folder)
